@@ -44,15 +44,16 @@ function App() {
 
   return (
     <main>
-      <h1>Shopping List</h1>
-
+      <h1>Handleliste</h1>
+      <AddForm addItem={addItem} />
+      
       <ShoppingList
         items={items}
         onToggle={togglePurchased}
         updateQuantity={updateQuantity}
       />
 
-      <AddForm addItem={addItem} />
+      
     </main>
   );
 }

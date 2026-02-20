@@ -7,7 +7,7 @@ export default function ShoppingItem({ item, onToggle, UpdateQuantity }){
 /> 
       </label>
 
-      <span><input type="number" value={item.quantity} min="1" onChange={(e) => UpdateQuantity(item.id, Number(e.target.value))
+      <span className="list_input"><input type="number" value={item.quantity} min="1" onChange={(e) => UpdateQuantity(item.id, Number(e.target.value))
   }
 /></span>
     </li>

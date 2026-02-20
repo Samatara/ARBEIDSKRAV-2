@@ -43,8 +43,8 @@ export default function AddForm({ addItem }) {
   }
 
   return (
-    <section>
-      <form onSubmit={handleSubmit}>
+    <section >
+      <form onSubmit={handleSubmit} className="form">
         <label>
           Vare
           <input type="text" value={name} onChange={(e) => { console.log("Endrer vare-navn:", e.target.value);
